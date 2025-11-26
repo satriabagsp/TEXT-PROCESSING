@@ -25,7 +25,7 @@ class sentistrength:
 		for term in self.emoticon_txt:
 			self.emoticon_dict[term[0]] = int(term[1])
 
-		# Membuat kamus idion
+		# Membuat kamus idiom
 		self.idioms_txt = [line.replace('\n','').split(":") for line in open("sentistrength_id/idioms_id.txt").read().splitlines()]
 		self.idioms_dict = OrderedDict()
 		for term in self.idioms_txt:
